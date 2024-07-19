@@ -22,4 +22,4 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('weather/', include('weather.urls')),  # Add this line
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_URL)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_URL)
