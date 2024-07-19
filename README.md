@@ -31,66 +31,59 @@
 
 Реализовала следующее:
 
-Приложение, он же сайт, который может спрогнозировать погоду введенного города в формочку.
+Приложение, он же сайт, который может спрогнозировать погоду введенного города.
 
-Для создания этого сайта я использовал ЯП Python на его фреймворке Django, подключил API ключи Яндекса и сервиса dadata, но о нем чуть позже.
+Для создания этого сайта я использовала  Python и фреймворк Django, подключила API ключи Яндекса и сервиса dadata.
 Ключи яндекса были необходимы для поиска данных прогноза погоды в определенном регионе.
 Вводя в поле формы название города и нажатию кнопки я получаю прогноз на 7 дней.
 
-Из дополнительного - я реализовал автодополнение с использованием API ключа сервиса dadata.ru
+Из дополнительного - я реализовала автодополнение с использованием API ключа сервиса dadata.ru
 Он позволяет по минимально введенным данным в поле отобразить какое-то значение, которое, возможно, хотел ввести пользователь.
 
 
 Запуск проекта
 
-Инструкция предназначена для windows и git bash и windows<br/>
+Инструкция предназначена для windows
 
 1. Клонируйте репозиторий и откройте его в любом удобном для вас редакторе:
 
 ```
-git clone https://github.com/Kiepon/forecast-weather.git
+https://github.com/elenaludina0573/Weather_forecast.git
 ```
 
 2. Установите виртуальное окружение:
-```
-
-Git bash:
-
-python -m venv your_venv
+``
 
 Windows:
 
-python -m venv your_venv
+python -m venv venv
 ``` 
 
 3. Активируйте виртуальное окружение:
 ```
-Git bash:
-source venv/Scripts/activate
 
 Windows:
-your_venv/Scripts/activate
+venv/Scripts/activate
 
 ```
 
 4. Установите зависимости из файла requirements.txt:
 ```
 
-Windows and git bash:
+Windows:
 pip install -r requirements.txt
 ```
 
 4. Сделайте миграции:
 ```
 
-Git bash and windows:
+Windows:
 python manage.py migrate
 ```
 
 5. Используйте команду createsuperuser для создания администратора в админ панели:
 ```
-
-git bash and windows:
+windows:
 python manage.py createsuperuser
 ```
 
